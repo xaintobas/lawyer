@@ -1,0 +1,46 @@
+.case-resolution {
+    padding: 5rem 5%;
+    background: var(--white);
+    text-align: center;
+}
+
+.case-resolution h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+.progress-bars {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.progress-item {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.progress-item span {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.progress-bar {
+    height: 8px;
+    background: var(--light-bg);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--primary-color);
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.percent {
+    color: var(--primary-color);
+    font-weight: bold;
+}

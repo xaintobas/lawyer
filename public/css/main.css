@@ -1,0 +1,110 @@
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/hero.css";
+@import "components/solution.css";
+@import "components/layout.css";
+@import "components/features.css";
+@import "components/newsletter.css";
+@import "components/blog.css";
+@import "components/about.css";
+@import "components/cases.css";
+@import "utils/buttons.css";
+@import "utils/layout.css";
+@import "utils/accordion.css";
+@import "utils/swiper.css";
+@import "utils/swiper-bundle.min.css";
+
+@import "utils/typography.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"); */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+:root {
+  --body-font: "Poppins", sans-serif;
+  --title-font: "PT Serif", serif;
+
+  --bg-color: #f4ede7;
+
+  --color-white-text: #fff;
+  --color-white-background: #fff;
+  --color-white-background: #fff;
+  --color-brown-text: #b68c5a;
+  --color-brown-background: #b68c5a;
+  --color-dark-blue-text: #011c1a;
+  --color-dark-blue-background: #011c1a;
+  --color-dark-blue-background1: #011c1a;
+  --color-dark-blue-background2: #0f2322;
+
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --color-overlay-background: rgba(0, 0, 0, 0.302);
+  --color-brown-shadow: 0px 4px 30px -1px #cba6724d;
+  --color-dark-blue-shadow: 0px 4px 20px -1px #011c1a33;
+  --color-mobile-menu-border-bottom: 1px solid rgb(215, 219, 221);
+
+  --overlay-color: linear-gradient(
+    180deg,
+    rgba(244, 237, 231, 0) 29.7%,
+    #f4ede7 195.05%
+  );
+
+  --common-color: #666666;
+  --color-grey: #a8a8a8;
+  --spacing: 120px;
+}
+
+/* BASIC RESET */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--color-white-background);
+  color: var(--black-color);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

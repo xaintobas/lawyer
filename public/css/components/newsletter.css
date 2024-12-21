@@ -1,0 +1,32 @@
+.newsletter {
+  padding: 4rem 5%;
+  background: var(--color-dark-blue-background);
+  text-align: center;
+  color: var(--color-white-text);
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+}

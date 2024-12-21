@@ -1,0 +1,68 @@
+:root {
+  --body-font: "Poppins", sans-serif;
+  --title-font: "PT Serif", serif;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 9rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  padding: 0.5rem 0;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-family: var(--body-font);
+}
+
+@media screen and (max-width: 1330px) {
+  h1 {
+    font-size: 6.5rem;
+    line-height: 7rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--title-font);
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--color-brown-text);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}

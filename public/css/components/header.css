@@ -1,0 +1,126 @@
+.header {
+  background: var(--bg-color);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.header-logo img {
+  width: 15rem;
+}
+
+.nav-links {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links .nav-items {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.hamburger,
+.close-btn {
+  display: none;
+}
+
+/* Sub Menu */
+
+.sub-items {
+  position: relative;
+}
+
+.sub-items::after {
+  content: "🔻";
+  margin-left: 0.2rem;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  background-color: var(--color-white-background);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--color-brown-shadow);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: none;
+  width: 17rem;
+}
+
+.sub-menu .nav-items {
+  padding: 1rem 1.5rem;
+}
+
+.sub-menu .nav-items:hover {
+  background-color: var(--color-brown-background);
+  color: var(--color-white-text);
+}
+
+.sub-menu .nav-items:not(:last-child) {
+  border-bottom: var(--color-mobile-menu-border-bottom);
+}
+
+.sub-items:hover > .sub-menu {
+  display: block;
+  animation: fadeIn 0.3s linear 1;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    padding: 10rem 1rem 1rem 3rem;
+    row-gap: 2rem;
+    background-color: var(--color-white-background);
+    z-index: 100;
+    display: none;
+  }
+
+  #overlay {
+    background-color: var(--color-overlay-background);
+    height: 100%;
+    width: 100%;
+    z-index: 15;
+    position: fixed;
+    top: 0;
+    right: 0rem;
+    bottom: 0;
+    display: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .sub-items:hover > .sub-menu {
+    display: block;
+    animation: fadeIn 0.3s linear 1;
+    margin-bottom: 21rem;
+  }
+
+  .nav-links .nav-items {
+    font-size: 2rem;
+  }
+
+  .hamburger,
+  .close-btn {
+    display: block;
+    cursor: pointer;
+    font-size: 3rem;
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+}
